@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Studio Muzammil Herramienta de Prompts por Lotes - Suite de automatización profesional para generación de prompts, flujos por lotes y exportación."
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - Herramienta de Prompts por Lotes 5"
+   }
+}

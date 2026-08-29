@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Muzammil - Batch Prompts Tool</title>
+    <!-- Reconstructed Vue 3 + Pinia + PrimeVue + vue-i18n side-panel app. -->
+    <script type="module" crossorigin src="/assets/index.html-DiuK8u8x.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/remoteConfig-B-mTxmww.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-D_3zVIhm.css">
+    <style>
+      :root {
+        --bg: #000000;
+        --panel: #111111;
+        --panel-2: #171717;
+        --surface: #1a1a1a;
+        --border: rgba(255,255,255,0.16);
+        --text: #f5f5f5;
+        --muted: rgba(255,255,255,0.7);
+        --accent: #ffffff;
+        --success: #3bd98d;
+        --danger: #ff6b6b;
+        --warn: #f5f5f5;
+        --radius: 18px;
+      }
+      html, body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+      #app {
+        background: var(--bg);
+      }
+      .p-card, .p-panel, .p-dialog, .p-drawer, .p-dropdown-panel, .p-menu, .p-overlaypanel, .p-popover,
+      .p-inputtext, .p-select, .p-button, .p-fieldset, .p-accordion, .p-tabview, .p-tablist,
+      .p-table, .p-datatable, .p-inputswitch, .p-tag, .p-message, .p-toast {
+        border-radius: var(--radius) !important;
+      }
+      .p-card, .p-panel, .p-dialog, .p-drawer, .p-dropdown-panel, .p-menu, .p-overlaypanel, .p-popover,
+      .p-fieldset, .p-accordion, .p-tabview, .p-table, .p-datatable, .p-message, .p-toast {
+        background: var(--panel) !important;
+        border-color: var(--border) !important;
+        color: var(--text) !important;
+        box-shadow: none !important;
+      }
+      .p-button:not(.p-button-danger):not(.p-button-success):not(.p-button-warning),
+      .p-inputtext, .p-select, .p-dropdown,
+      textarea, input {
+        background: var(--panel-2) !important;
+        border: 1px solid var(--border) !important;
+        color: var(--text) !important;
+      }
+      .p-button {
+        border-radius: 12px !important;
+      }
+      .p-button.p-button-secondary,
+      .p-button.p-button-text,
+      .p-button.p-button-outlined {
+        background: transparent !important;
+        color: var(--text) !important;
+        border-color: var(--border) !important;
+      }
+      .p-button-success {
+        background: var(--success) !important;
+        color: #01160d !important;
+        border: none !important;
+      }
+      .p-button-danger {
+        background: var(--danger) !important;
+        color: #1b0a0a !important;
+        border: none !important;
+      }
+      .p-tag-success { background: rgba(59,217,141,0.16) !important; color: var(--success) !important; }
+      .p-tag-danger { background: rgba(255,107,107,0.16) !important; color: var(--danger) !important; }
+      .text-primary, .text-amber-500, .text-violet-500, .text-purple-500 { color: var(--text) !important; }
+      .bg-primary, .bg-slate-900, .bg-slate-800, .bg-slate-100, .dark\:bg-slate-800,
+      .dark\:bg-slate-900, .bg-violet-500, .bg-amber-500 {
+        background-color: var(--panel) !important;
+      }
+      a, .p-link {
+        color: var(--text) !important;
+      }
+      .text-muted, .text-slate-500, .text-slate-700, .dark\:text-slate-300, .dark\:text-slate-400 {
+        color: var(--muted) !important;
+      }
+      .border-border, .border-slate-300\/30, .border-slate-200, .dark\:border-slate-700 {
+        border-color: var(--border) !important;
+      }
+      .rounded-xl, .rounded-lg, .rounded-md, .rounded-sm {
+        border-radius: 14px !important;
+      }
+      .p-progressbar .p-progressbar-value {
+        background: #ffffff !important;
+      }
+      [data-studiomuzammil-hidden="paywall"],
+      .plan-banner,
+      [class*="PlanBanner"],
+      [class*="planBanner"],
+      [class*="upgrade"],
+      [class*="Upgrade"],
+      [class*="paywall"],
+      [class*="Paywall"],
+      [data-testid*="upgrade"],
+      [data-upgrade="true"] {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      (function () {
+       const clean = (value) => {
+         if (typeof value !== 'string') return value;
+         return value
+           .replace(/https?:\/\/www\.naudera\.com\/flow\?new-version-installed=true/gi, 'https://studiomuzammil.pages.dev')
+           .replace(/https?:\/\/www\.naudera\.com\//gi, 'https://studiomuzammil.pages.dev/')
+           .replace(/https?:\/\/github\.com\/AndroDeveloper24\/naudera-veo-user-guide/gi, 'https://studiomuzammil.pages.dev')
+           .replace(/naudera\.com/gi, 'studiomuzammil.pages.dev')
+           .replace(/Naudera/gi, 'Studio Muzammil')
+           .replace(/NAUDERA/gi, 'STUDIO MUZAMMIL')
+           .replace(/new-version-installed=true/gi, '');
+        };
+        const isPaywallNode = (node) => {
+          if (!node || node.nodeType !== 1) return false;
+          const text = (node.textContent || '').toLowerCase();
+          const attrs = Array.from(node.attributes || []).map((attr) => `${attr.name}=${attr.value}`).join(' ').toLowerCase();
+          const className = (node.className || '').toString().toLowerCase();
+          const id = (node.id || '').toLowerCase();
+          const label = (node.getAttribute && (node.getAttribute('aria-label') || node.getAttribute('title') || '')).toLowerCase();
+          return /(upgrade to max|max plan|upgrade|premium|pro plan|mx plan|paywall|pricing|unlimited plan)/i.test(`${text} ${attrs} ${className} ${id} ${label}`);
+        };
+        const hidePaywallElements = () => {
+          const nodes = document.querySelectorAll('*');
+          nodes.forEach((node) => {
+            if (isPaywallNode(node)) {
+              node.setAttribute('data-studiomuzammil-hidden', 'paywall');
+              node.style.display = 'none';
+              node.style.visibility = 'hidden';
+              node.style.opacity = '0';
+              node.style.pointerEvents = 'none';
+              if (node.parentElement) {
+                node.parentElement.style.display = 'none';
+              }
+            }
+          });
+        };
+        const rewriteNode = (node) => {
+          if (!node) return;
+          if (node.textContent) {
+            node.textContent = clean(node.textContent);
+          }
+          ['href', 'src', 'data-href'].forEach((attr) => {
+            if (node.getAttribute && node.getAttribute(attr)) {
+              node.setAttribute(attr, clean(node.getAttribute(attr)));
+            }
+          });
+        };
+        const walk = (root = document) => {
+          if (root && root.querySelectorAll) {
+            root.querySelectorAll('*').forEach(rewriteNode);
+          }
+          if (root && root.childNodes) {
+            root.childNodes.forEach((node) => {
+              if (node.nodeType === Node.TEXT_NODE && node.textContent) {
+                node.textContent = clean(node.textContent);
+              }
+            });
+          }
+        };
+        const originalOpen = window.open;
+        window.open = function (url, ...args) {
+          if (typeof url === 'string') {
+            const lowered = url.toLowerCase();
+            if (/(upgrade|max|premium|paywall|pricing)/i.test(lowered)) {
+              return null;
+            }
+            url = clean(url);
+          }
+          return originalOpen.call(this, url, ...args);
+        };
+        document.addEventListener('DOMContentLoaded', () => {
+          walk();
+          hidePaywallElements();
+        });
+        walk();
+        hidePaywallElements();
+        setInterval(hidePaywallElements, 800);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

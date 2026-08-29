@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Studio Muzammil - Batch Prompts Tool 5",
+    "description": "Extension name shown in the Chrome Web Store and browser"
+  },
+  "extDesc": {
+    "message": "Studio Muzammil Batch Prompts Tool - Professional automation suite para prompt generation, batch workflows at asset exports.",
+    "description": "Short description (max 132 chars) shown in the Chrome Web Store"
+  }
+}

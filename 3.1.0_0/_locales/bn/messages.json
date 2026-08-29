@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Studio Muzammil ব্যাচ প্রম্পট টুল - প্রম্পট জেনারেশন, ব্যাচ ওয়ার্কফ্লো এবং সম্পদ রপ্তানির জন্য পেশাদার অটোমেশন স্যুট।"
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - ব্যাচ প্রম্পট টুল 5"
+   }
+}

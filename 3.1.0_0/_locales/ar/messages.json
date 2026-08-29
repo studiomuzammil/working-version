@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "أداة Studio Muzammil - Batch Prompts - مجموعة أتمتة احترافية لإنشاء الرموز والمسارات والتصديرات."
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - أداة Batch Prompts 5"
+   }
+}

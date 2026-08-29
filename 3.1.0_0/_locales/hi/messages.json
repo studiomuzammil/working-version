@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Studio Muzammil बैच प्रॉम्प्ट्स टूल - प्रॉम्प्ट जेनरेशन, बैच वर्कफ़्लो और एसेट एक्सपोर्ट के लिए पेशेवर ऑटोमेशन सूट।"
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - बैच प्रॉम्प्ट्स टूल 5"
+   }
+}

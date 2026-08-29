@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Studio Muzammilバッチプロンプトツール - プロンプト生成、バッチワークフロー、アセットエクスポート向けの専門的自動化スイート。"
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - バッチプロンプトツール 5"
+   }
+}

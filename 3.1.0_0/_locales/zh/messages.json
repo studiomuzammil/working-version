@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Studio Muzammil 批量提示工具 - 用于提示生成、批量工作流和资源导出的专业自动化套件。"
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - 批量提示工具 5"
+   }
+}

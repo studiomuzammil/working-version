@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Studio Muzammil Alat Batch Prompts - Suite otomasi profesional untuk pembuatan prompt, alur kerja batch, dan ekspor aset."
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - Alat Batch Prompts 5"
+   }
+}

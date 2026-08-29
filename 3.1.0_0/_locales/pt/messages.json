@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Ferramenta Studio Muzammil - Batch Prompts - Suite de automação profissional para geração de prompts, fluxos em lote e exportação de ativos."
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - Ferramenta Batch Prompts 5"
+   }
+}

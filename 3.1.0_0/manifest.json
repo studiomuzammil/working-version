@@ -1,0 +1,43 @@
+{
+   "action": {
+      "default_title": "Studio Muzammil - Batch Prompts Tool"
+   },
+   "author": {
+      "email": "hello@studiomuzammil.pages.dev"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "assets/index.ts-B6Soqoe6.js" ],
+      "matches": [ "*://labs.google/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extDesc__",
+   "homepage_url": "https://studiomuzammil.pages.dev",
+   "host_permissions": [ "*://labs.google/*", "https://firebaseremoteconfig.googleapis.com/*", "https://firebaseinstallations.googleapis.com/*" ],
+   "icons": {
+      "128": "src/assets/logo.png",
+      "16": "src/assets/logo.png",
+      "24": "src/assets/logo.png",
+      "32": "src/assets/logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0uLFmH6VNJeGEkYtjJ+fsQLdzqGf15bbtaCB2FOSWPsf9HOT2hQsWRaC//Ewmdp0qpKd9A1RiLrmJ41vdvTRLn3Fe+lDxffcJRvxZ75j1G6sgeaZc82trQR//VJlqh0uh1cuQgvHhmC1bRpL9hjKGlfzr1se3GVj11mQ6Y+IBqsHasPE7v/THRcJYGwCs+mrOjDANfzUI7eoL3nV9dNlCJFmXcWPnLagBlIpLbKL3JLY8tp6rQDkZC4xclHYug5/bsMfGuCnK5zKrekthjj3eRUZFPkYyvgCGpnl20NAAL+OotlGlZOyE3ZzU+sfrHIhaY6VTwN95GobZCvrckepcQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "offline_enabled": true,
+   "permissions": [ "storage", "tabs", "background", "sidePanel", "activeTab", "downloads", "debugger", "cookies" ],
+   "side_panel": {
+      "default_path": "src/ui/side-panel/index.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.1.0",
+   "web_accessible_resources": [ {
+      "matches": [ "*://labs.google/*" ],
+      "resources": [ "assets/catchUploadFile.ts-Cv4P5U7h.js", "assets/index.ts-B6Soqoe6.js" ],
+      "use_dynamic_url": false
+   } ]
+}

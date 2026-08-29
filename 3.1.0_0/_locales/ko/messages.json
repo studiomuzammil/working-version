@@ -1,0 +1,10 @@
+{
+   "extDesc": {
+      "description": "Short description (max 132 chars) shown in the Chrome Web Store",
+      "message": "Studio Muzammil 배치 프롬프트 도구 - 프롬프트 생성, 배치 워크플로우 및 자산 내보내기를 위한 전문 자동화 제품군입니다."
+   },
+   "extName": {
+      "description": "Extension name shown in the Chrome Web Store and browser",
+      "message": "Studio Muzammil - 배치 프롬프트 도구 5"
+   }
+}
